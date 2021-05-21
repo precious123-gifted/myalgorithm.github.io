@@ -28,4 +28,4 @@ function checkYuGiOh(n) {
   return modifiedArray;
 }
 
-checkYuGiOh(100);
+checkYuGiOh(53);
