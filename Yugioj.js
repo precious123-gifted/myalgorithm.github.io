@@ -1,4 +1,9 @@
+var Arrai = document.querySelector(".array");
+var Create = document.querySelector(".create");
+var Input = document.querySelector(".input2");
+
 function checkYuGiOh(n) {
+  var n = Input.value;
   if (typeof n !== "number") {
     console.log(`invalid parameter: ${n}`);
   }
@@ -23,9 +28,11 @@ function checkYuGiOh(n) {
       modifiedArray.push(i);
     }
   }
+  Arrai.innerHTML = modifiedArray;
   console.log(modifiedArray);
   console.log(modifiedArray.length);
   return modifiedArray;
 }
-
-checkYuGiOh(53);
+Create.addEventListener("click", () => {
+  checkYuGiOh();
+});
